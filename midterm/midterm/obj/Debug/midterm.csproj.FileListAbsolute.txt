@@ -1,0 +1,17 @@
+F:\GoogleDrive\Programs\dotnet\midterm\midterm\obj\Debug\midterm.ChangePassword.resources
+F:\GoogleDrive\Programs\dotnet\midterm\midterm\obj\Debug\midterm.Users.resources
+F:\GoogleDrive\Programs\dotnet\midterm\midterm\obj\Debug\midterm.login.resources
+F:\GoogleDrive\Programs\dotnet\midterm\midterm\obj\Debug\midterm.Properties.Resources.resources
+F:\GoogleDrive\Programs\dotnet\midterm\midterm\obj\Debug\midterm.csproj.GenerateResource.Cache
+F:\GoogleDrive\Programs\dotnet\midterm\midterm\obj\Debug\midterm.csproj.CoreCompileInputs.cache
+F:\GoogleDrive\Programs\dotnet\midterm\midterm\bin\Debug\midterm.exe.config
+F:\GoogleDrive\Programs\dotnet\midterm\midterm\bin\Debug\midterm.exe
+F:\GoogleDrive\Programs\dotnet\midterm\midterm\bin\Debug\midterm.pdb
+F:\GoogleDrive\Programs\dotnet\midterm\midterm\obj\Debug\midterm.exe
+F:\GoogleDrive\Programs\dotnet\midterm\midterm\obj\Debug\midterm.pdb
+F:\GoogleDrive\Programs\dotnet\midterm\midterm\obj\Debug\midterm.csprojResolveAssemblyReference.cache
+F:\GoogleDrive\Programs\dotnet\midterm\midterm\obj\Debug\midterm.Admin.resources
+F:\GoogleDrive\Programs\dotnet\midterm\midterm\obj\Debug\midterm.mainForm.resources
+F:\GoogleDrive\Programs\dotnet\midterm\midterm\obj\Debug\midterm.AdminDashboard.resources
+F:\GoogleDrive\Programs\dotnet\midterm\midterm\obj\Debug\midterm.sign.resources
+F:\GoogleDrive\Programs\dotnet\midterm\midterm\obj\Debug\midterm.update_sign.resources
