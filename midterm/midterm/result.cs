@@ -16,14 +16,17 @@ namespace midterm
         private int marks;
         private int user_id;
         private String quizStatus;
+  
 
-        public result()
+        public result(int marks)
         {
             InitializeComponent();
-            correct.Text = getMarks().ToString();
-            status.Text = "Passed";
-            wrong.Text = (10- getMarks()).ToString();
-            markslabel.Text = getMarks().ToString();
+            this.marks = marks;
+                correct.Text = marks.ToString();
+                status.Text = "Passed";
+                wrong.Text = (10 - marks).ToString();
+                markslabel.Text = marks.ToString();
+           
             
         }
 

@@ -108,31 +108,10 @@ namespace midterm
                     MemoryStream ms = new MemoryStream(img);
                     questionpic.Image = Image.FromStream(ms);
                 }
-                selected_option = "";
-                if (option1.Checked)
+            
+                if (count != 0)
                 {
-                    selected_option = option1.Text;
-                }
-                else if (option2.Checked)
-                {
-                    selected_option = option2.Text;
-                }
-                else if (option3.Checked)
-                {
-                    selected_option = option3.Text;
-                }
-                else if (option4.Checked)
-                {
-                    selected_option = option4.Text;
-                }
-                else
-                {
-                    MessageBox.Show("Select One Option to retrieve next question");
-                }
-
-                if (count != 1)
-                {
-                    marks = marksCount(selected_option, previous_correct);
+                    marks = marksCount(previous_correct);
                 }
 
 
@@ -243,11 +222,34 @@ namespace midterm
             return user_id;
         }
 
-        public int marksCount(string pS,string pC)
+        public int marksCount(string pC)
         {
-            if (pS.Equals(pC)){
+            
+            if (option1.Checked)
+            {
+                selected_option = option1.Text;
+            }
+            else if (option2.Checked)
+            {
+                selected_option = option2.Text;
+            }
+            else if (option3.Checked)
+            {
+                selected_option = option3.Text;
+            }
+            else if (option4.Checked)
+            {
+                selected_option = option4.Text;
+            }
+            else
+            {
+                MessageBox.Show("Select One Option to retrieve next question");
+            }
+
+            if (correct_option.Equals(pC)){
                 marks++;
             }
+            selected_option = "";
             return marks;
         }
 
@@ -268,11 +270,12 @@ namespace midterm
             resultCmd.Parameters.AddWithValue("@test_count", getTestCount());
             resultCmd.Parameters.AddWithValue("@test_marks", marks);
             //if marks is 6 it will show pass
-            if ((count - marks) >= 6)
+            int result = count - marks;
+            if (result >= 6)
             {
                 MessageBox.Show("Congrates You Passed");
                 this.Hide();
-                result rs = new result();
+                result rs = new result(result);
                 rs.setMarks(marks);
                 rs.setUserID(user_id);
                 status = "passed";
@@ -309,6 +312,7 @@ namespace midterm
             {
                 MessageBox.Show("Time Up Quiz Will Be Ended ");
                 quizEnd();
+               
             }
         }
     }

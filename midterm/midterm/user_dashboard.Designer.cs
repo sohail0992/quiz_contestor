@@ -30,8 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.quizpanel = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
-            this.no = new System.Windows.Forms.Label();
             this.startquizpanel = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -40,6 +38,8 @@
             this.button4 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.no = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.option1 = new System.Windows.Forms.RadioButton();
@@ -52,6 +52,7 @@
             this.questionpic = new System.Windows.Forms.PictureBox();
             this.question = new System.Windows.Forms.TextBox();
             this.timer = new System.Windows.Forms.Timer(this.components);
+            this.directoryEntry1 = new System.DirectoryServices.DirectoryEntry();
             this.quizpanel.SuspendLayout();
             this.startquizpanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.questionpic)).BeginInit();
@@ -79,32 +80,6 @@
             this.quizpanel.Name = "quizpanel";
             this.quizpanel.Size = new System.Drawing.Size(901, 502);
             this.quizpanel.TabIndex = 3;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Gill Sans MT", 13F, System.Drawing.FontStyle.Bold);
-            this.label10.ForeColor = System.Drawing.Color.Transparent;
-            this.label10.Location = new System.Drawing.Point(109, 22);
-            this.label10.Margin = new System.Windows.Forms.Padding(3);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(47, 27);
-            this.label10.TabIndex = 45;
-            this.label10.Text = "0:00";
-            // 
-            // no
-            // 
-            this.no.AutoSize = true;
-            this.no.BackColor = System.Drawing.Color.Transparent;
-            this.no.Font = new System.Drawing.Font("Gill Sans MT", 13F, System.Drawing.FontStyle.Bold);
-            this.no.ForeColor = System.Drawing.Color.Transparent;
-            this.no.Location = new System.Drawing.Point(109, 76);
-            this.no.Margin = new System.Windows.Forms.Padding(3);
-            this.no.Name = "no";
-            this.no.Size = new System.Drawing.Size(22, 27);
-            this.no.TabIndex = 44;
-            this.no.Text = "0";
             // 
             // startquizpanel
             // 
@@ -215,6 +190,32 @@
             this.label6.Size = new System.Drawing.Size(58, 27);
             this.label6.TabIndex = 29;
             this.label6.Text = "Quiz ";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Gill Sans MT", 13F, System.Drawing.FontStyle.Bold);
+            this.label10.ForeColor = System.Drawing.Color.Transparent;
+            this.label10.Location = new System.Drawing.Point(109, 22);
+            this.label10.Margin = new System.Windows.Forms.Padding(3);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(47, 27);
+            this.label10.TabIndex = 45;
+            this.label10.Text = "0:00";
+            // 
+            // no
+            // 
+            this.no.AutoSize = true;
+            this.no.BackColor = System.Drawing.Color.Transparent;
+            this.no.Font = new System.Drawing.Font("Gill Sans MT", 13F, System.Drawing.FontStyle.Bold);
+            this.no.ForeColor = System.Drawing.Color.Transparent;
+            this.no.Location = new System.Drawing.Point(109, 76);
+            this.no.Margin = new System.Windows.Forms.Padding(3);
+            this.no.Name = "no";
+            this.no.Size = new System.Drawing.Size(22, 27);
+            this.no.TabIndex = 44;
+            this.no.Text = "0";
             // 
             // label2
             // 
@@ -401,5 +402,6 @@
         private System.Windows.Forms.RadioButton option4;
         private System.Windows.Forms.Timer timer;
         private System.Windows.Forms.Label label10;
+        private System.DirectoryServices.DirectoryEntry directoryEntry1;
     }
 }

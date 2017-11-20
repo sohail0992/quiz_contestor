@@ -56,5 +56,12 @@ namespace midterm
             successfullCandidates sc = new successfullCandidates();
             sc.Show();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            mainForm md = new mainForm();
+            md.Show();
+        }
     }
 }

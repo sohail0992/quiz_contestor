@@ -20,3 +20,4 @@ F:\GoogleDrive\Programs\dotnet\midterm\midterm\obj\Release\midterm.search_user.r
 F:\GoogleDrive\Programs\dotnet\midterm\midterm\obj\Release\midterm.user_dashboard.resources
 F:\GoogleDrive\Programs\dotnet\midterm\midterm\obj\Release\midterm.result.resources
 F:\GoogleDrive\Programs\dotnet\midterm\midterm\obj\Release\midterm.successfullCandidates.resources
+F:\GoogleDrive\Programs\dotnet\midterm\midterm\obj\Release\midterm.ReportForm.resources
