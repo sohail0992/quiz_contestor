@@ -15,3 +15,9 @@ F:\GoogleDrive\Programs\dotnet\midterm\midterm\obj\Debug\midterm.mainForm.resour
 F:\GoogleDrive\Programs\dotnet\midterm\midterm\obj\Debug\midterm.AdminDashboard.resources
 F:\GoogleDrive\Programs\dotnet\midterm\midterm\obj\Debug\midterm.sign.resources
 F:\GoogleDrive\Programs\dotnet\midterm\midterm\obj\Debug\midterm.update_sign.resources
+F:\GoogleDrive\Programs\dotnet\midterm\midterm\obj\Debug\midterm.ReportForm.resources
+F:\GoogleDrive\Programs\dotnet\midterm\midterm\obj\Debug\midterm.result.resources
+F:\GoogleDrive\Programs\dotnet\midterm\midterm\obj\Debug\midterm.search_user.resources
+F:\GoogleDrive\Programs\dotnet\midterm\midterm\obj\Debug\midterm.successfullCandidates.resources
+F:\GoogleDrive\Programs\dotnet\midterm\midterm\obj\Debug\midterm.user_dashboard.resources
+F:\GoogleDrive\Programs\dotnet\midterm\midterm\obj\Debug\midterm.user_list.resources

@@ -53,23 +53,22 @@
             this.question = new System.Windows.Forms.TextBox();
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.directoryEntry1 = new System.DirectoryServices.DirectoryEntry();
+            this.options = new System.Windows.Forms.GroupBox();
             this.quizpanel.SuspendLayout();
             this.startquizpanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.questionpic)).BeginInit();
+            this.options.SuspendLayout();
             this.SuspendLayout();
             // 
             // quizpanel
             // 
             this.quizpanel.BackColor = System.Drawing.SystemColors.Highlight;
             this.quizpanel.Controls.Add(this.startquizpanel);
+            this.quizpanel.Controls.Add(this.options);
             this.quizpanel.Controls.Add(this.label10);
             this.quizpanel.Controls.Add(this.no);
             this.quizpanel.Controls.Add(this.label2);
             this.quizpanel.Controls.Add(this.button3);
-            this.quizpanel.Controls.Add(this.option1);
-            this.quizpanel.Controls.Add(this.option2);
-            this.quizpanel.Controls.Add(this.option4);
-            this.quizpanel.Controls.Add(this.option3);
             this.quizpanel.Controls.Add(this.label7);
             this.quizpanel.Controls.Add(this.button1);
             this.quizpanel.Controls.Add(this.label5);
@@ -248,7 +247,7 @@
             // 
             this.option1.Font = new System.Drawing.Font("Gill Sans MT", 9F, System.Drawing.FontStyle.Bold);
             this.option1.ForeColor = System.Drawing.Color.White;
-            this.option1.Location = new System.Drawing.Point(28, 227);
+            this.option1.Location = new System.Drawing.Point(6, 42);
             this.option1.Name = "option1";
             this.option1.Size = new System.Drawing.Size(440, 23);
             this.option1.TabIndex = 1;
@@ -259,7 +258,7 @@
             // 
             this.option2.Font = new System.Drawing.Font("Gill Sans MT", 9F, System.Drawing.FontStyle.Bold);
             this.option2.ForeColor = System.Drawing.Color.White;
-            this.option2.Location = new System.Drawing.Point(28, 271);
+            this.option2.Location = new System.Drawing.Point(6, 90);
             this.option2.Name = "option2";
             this.option2.Size = new System.Drawing.Size(440, 23);
             this.option2.TabIndex = 2;
@@ -270,7 +269,7 @@
             // 
             this.option4.Font = new System.Drawing.Font("Gill Sans MT", 9F, System.Drawing.FontStyle.Bold);
             this.option4.ForeColor = System.Drawing.Color.White;
-            this.option4.Location = new System.Drawing.Point(28, 377);
+            this.option4.Location = new System.Drawing.Point(6, 196);
             this.option4.Name = "option4";
             this.option4.Size = new System.Drawing.Size(440, 23);
             this.option4.TabIndex = 4;
@@ -281,7 +280,7 @@
             // 
             this.option3.Font = new System.Drawing.Font("Gill Sans MT", 9F, System.Drawing.FontStyle.Bold);
             this.option3.ForeColor = System.Drawing.Color.White;
-            this.option3.Location = new System.Drawing.Point(28, 326);
+            this.option3.Location = new System.Drawing.Point(6, 142);
             this.option3.Name = "option3";
             this.option3.Size = new System.Drawing.Size(440, 23);
             this.option3.TabIndex = 3;
@@ -355,6 +354,19 @@
             this.timer.Interval = 1000;
             this.timer.Tick += new System.EventHandler(this.timer_Tick_1);
             // 
+            // options
+            // 
+            this.options.Controls.Add(this.option1);
+            this.options.Controls.Add(this.option2);
+            this.options.Controls.Add(this.option3);
+            this.options.Controls.Add(this.option4);
+            this.options.Location = new System.Drawing.Point(12, 198);
+            this.options.Name = "options";
+            this.options.Size = new System.Drawing.Size(462, 234);
+            this.options.TabIndex = 46;
+            this.options.TabStop = false;
+            this.options.Enter += new System.EventHandler(this.options_Enter);
+            // 
             // user_dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -373,6 +385,7 @@
             this.startquizpanel.ResumeLayout(false);
             this.startquizpanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.questionpic)).EndInit();
+            this.options.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -403,5 +416,6 @@
         private System.Windows.Forms.Timer timer;
         private System.Windows.Forms.Label label10;
         private System.DirectoryServices.DirectoryEntry directoryEntry1;
+        private System.Windows.Forms.GroupBox options;
     }
 }

@@ -23,7 +23,6 @@ namespace midterm
         int marks;
         String status;
         String previous_selected;
-        String previous_correct;
         string selected_option;
         string correct_option;
         private int test_count;
@@ -38,9 +37,7 @@ namespace midterm
             marks = 0;
             count = 0;
             status = "";
-            test_count = 0;
-            previous_selected = "";
-            previous_correct = "";
+            test_count = 0;  
             q_id = 0;
             startquizpanel.Visible = true;
             timer.Start();
@@ -63,21 +60,26 @@ namespace midterm
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
-
+            selected_option = "";
+            selected_option = option1.Text;
         }
 
         private void radioButton4_CheckedChanged(object sender, EventArgs e)
         {
-
+            selected_option = "";
+            selected_option = option2.Text;
         }
 
         private void radioButton5_CheckedChanged(object sender, EventArgs e)
         {
-
+            selected_option = "";
+            selected_option = option4.Text;
         }
 
         private void radioButton3_CheckedChanged(object sender, EventArgs e)
         {
+            selected_option = "";
+            selected_option = option3.Text;
 
         }
 
@@ -85,7 +87,7 @@ namespace midterm
         {
             count++;
 
-            previous_correct = correct_option;
+            string previous_correct = correct_option;
           
             if (count > 0 && count < 10)
             {
@@ -108,14 +110,11 @@ namespace midterm
                     MemoryStream ms = new MemoryStream(img);
                     questionpic.Image = Image.FromStream(ms);
                 }
-            
-                if (count != 0)
+                if (count != 1)
                 {
                     marks = marksCount(previous_correct);
                 }
-
-
-                //  if (RadioButton.is)
+               
             }
             else
             {
@@ -224,32 +223,10 @@ namespace midterm
 
         public int marksCount(string pC)
         {
-            
-            if (option1.Checked)
+            if (selected_option.Equals(pC))
             {
-                selected_option = option1.Text;
-            }
-            else if (option2.Checked)
-            {
-                selected_option = option2.Text;
-            }
-            else if (option3.Checked)
-            {
-                selected_option = option3.Text;
-            }
-            else if (option4.Checked)
-            {
-                selected_option = option4.Text;
-            }
-            else
-            {
-                MessageBox.Show("Select One Option to retrieve next question");
-            }
-
-            if (correct_option.Equals(pC)){
                 marks++;
             }
-            selected_option = "";
             return marks;
         }
 
@@ -270,7 +247,7 @@ namespace midterm
             resultCmd.Parameters.AddWithValue("@test_count", getTestCount());
             resultCmd.Parameters.AddWithValue("@test_marks", marks);
             //if marks is 6 it will show pass
-            int result = count - marks;
+            int result =  marks;
             if (result >= 6)
             {
                 MessageBox.Show("Congrates You Passed");
@@ -306,14 +283,21 @@ namespace midterm
             if (Second == 60)
             {
                 Minutes++;
+                Second = 0;
             }
             label10.Text = Minutes + ":" + Second;
             if (Minutes == 5)
             {
+                timer.Stop();
                 MessageBox.Show("Time Up Quiz Will Be Ended ");
                 quizEnd();
                
             }
+        }
+
+        private void options_Enter(object sender, EventArgs e)
+        {
+          
         }
     }
 }
